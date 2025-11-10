@@ -1,6 +1,7 @@
-import {auth} from "../better-auth/auth";
-import {inngest} from "../inngest/client";
-import type { SignUpFormData, SignInFormData } from "../types/index";
+'use server';
+
+import {auth} from "@/lib/better-auth/auth";
+import {inngest} from "@/lib/inngest/client";
 
 export const signUpWithEmail = async ({ email, password, fullName, country, investmentGoals, riskTolerance, preferredIndustry }: SignUpFormData) => {
     try {
@@ -29,13 +30,16 @@ export const signInWithEmail = async ({ email, password }: SignInFormData) => {
         console.log('Sign in failed', e)
         return { success: false, error: 'Sign in failed' }
     }
+
 }
 
-export const signOut = async () => {
-    try {
-        await auth.api.signOut();
-    } catch (e) {
-        console.log('Sign out failed', e)
-        return { success: false, error: 'Sign out failed' }
-    }
-}
+
+// TODO: Fix sign out action
+// export const signOut = async () => {
+//     try {
+//         await auth.api.signOut({ headers: await headers() });
+//     } catch (e) {
+//         console.log('Sign out failed', e)
+//         return { success: false, error: 'Sign out failed' }
+//     }
+// }
