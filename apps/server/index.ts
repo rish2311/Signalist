@@ -13,18 +13,32 @@ const corsHeaders = {
 };
 
 const server = serve({
-  port: process.env.PORT || 8989,
+  port: process.env.PORT || 3001,
   async fetch(req) {
     const url = new URL(req.url);
     
+    // Handle OPTIONS for auth endpoints first
+    if (req.method === "OPTIONS" && url.pathname.startsWith("/api/auth")) {
+      return new Response(null, { status: 200, headers: corsHeaders });
+    }
+    
     // Better Auth endpoints
     if (url.pathname.startsWith("/api/auth")) {
-      const response = await auth.handler(req);
-      // Add CORS headers to auth responses
-      Object.entries(corsHeaders).forEach(([key, value]) => {
-        response.headers.set(key, value);
-      });
-      return response;
+      console.log("Auth request:", req.method, url.pathname);
+      try {
+        const response = await auth.handler(req);
+        // Ensure CORS headers are present
+        Object.entries(corsHeaders).forEach(([key, value]) => {
+          response.headers.set(key, value);
+        });
+        return response;
+      } catch (error) {
+        console.error("Auth handler error:", error);
+        return new Response(JSON.stringify({ error: "Auth handler failed" }), {
+          status: 500,
+          headers: { "Content-Type": "application/json", ...corsHeaders }
+        });
+      }
     }
     
     // Inngest webhook
