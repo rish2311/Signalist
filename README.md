@@ -9,24 +9,28 @@ Built for the **TanStack Start Hackathon** hosted by Convex, CodeRabbit, Netlify
 ### 🌟 Advanced Features Showcasing TanStack Start
 
 #### 🤖 **AI-Powered Market Intelligence**
+
 - **Gemini AI Integration**: Real-time market sentiment analysis and stock predictions
 - **Smart Alerts**: AI-generated personalized investment recommendations
 - **News Sentiment Analysis**: Firecrawl-powered news scraping with AI sentiment scoring
 - **Portfolio Optimization**: AI-driven portfolio rebalancing suggestions
 
 #### 🔄 **Real-Time Collaborative Features**
+
 - **Live Trading Rooms**: Real-time chat and stock discussions with WebSocket streaming
 - **Collaborative Watchlists**: Share and sync watchlists with team members
 - **Social Trading**: Follow top traders and mirror their strategies
 - **Live Market Commentary**: Real-time analyst insights and community discussions
 
 #### 📊 **Advanced Streaming & Interactivity**
+
 - **Server-Sent Events**: Live stock price updates and market data streaming
 - **Real-time Charts**: Interactive TradingView widgets with live data
 - **Progressive Enhancement**: Seamless offline-to-online transitions
 - **Optimistic Updates**: Instant UI feedback with server reconciliation
 
 #### 🛠 **Full-Stack Architecture Excellence**
+
 - **Server Functions**: Edge-deployed API routes for ultra-low latency
 - **Streaming SSR**: Progressive page loading with skeleton states
 - **Advanced Routing**: Nested layouts with parallel data loading
@@ -35,36 +39,43 @@ Built for the **TanStack Start Hackathon** hosted by Convex, CodeRabbit, Netlify
 ## 🎯 Hackathon Integration Strategy
 
 ### **Convex Integration**
+
 - Real-time database for live trading data and user interactions
 - Reactive queries for instant UI updates
 - Collaborative features with conflict-free replicated data types (CRDTs)
 
 ### **CodeRabbit Integration**
+
 - Automated code review for trading algorithm submissions
 - AI-powered code quality analysis for user-submitted trading strategies
 - Intelligent code suggestions for portfolio optimization scripts
 
 ### **Netlify Deployment**
+
 - Edge functions for ultra-fast API responses
 - Global CDN for TradingView widget optimization
 - Advanced caching strategies for market data
 
 ### **Firecrawl Integration**
+
 - Real-time financial news scraping from multiple sources
 - Automated earnings report analysis
 - SEC filing monitoring and alerts
 
 ### **Sentry Monitoring**
+
 - Real-time error tracking for trading operations
 - Performance monitoring for critical financial calculations
 - User session replay for debugging trading issues
 
 ### **Autumn Integration**
+
 - Advanced analytics for user trading patterns
 - A/B testing for investment recommendation algorithms
 - Conversion tracking for premium feature adoption
 
 ### **Cloudflare Integration**
+
 - Workers for edge-deployed market data processing
 - R2 storage for historical trading data
 - Advanced DDoS protection for financial platform security
@@ -89,6 +100,7 @@ Built for the **TanStack Start Hackathon** hosted by Convex, CodeRabbit, Netlify
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Node.js 18+ or Bun
 - MongoDB Atlas account
 - API keys for integrations
@@ -140,24 +152,28 @@ CLOUDFLARE_ACCOUNT_ID=your_cf_account
 ## 🎨 Key Features
 
 ### 📈 **Smart Trading Dashboard**
+
 - Real-time market overview with TradingView integration
 - AI-powered stock recommendations
 - Personalized watchlists with collaborative features
 - Advanced portfolio analytics
 
 ### 🤝 **Social Trading Platform**
+
 - Follow successful traders
 - Real-time trading rooms and discussions
 - Collaborative investment strategies
 - Social sentiment analysis
 
 ### 🔔 **Intelligent Alerts System**
+
 - AI-generated market alerts
 - Custom price and volume triggers
 - News-based sentiment alerts
 - Portfolio rebalancing notifications
 
 ### 📊 **Advanced Analytics**
+
 - Portfolio performance tracking
 - Risk assessment tools
 - Market correlation analysis
@@ -166,6 +182,7 @@ CLOUDFLARE_ACCOUNT_ID=your_cf_account
 ## 🛠 Tech Stack
 
 ### **Frontend (TanStack Start)**
+
 - **Framework**: TanStack Start with React
 - **Routing**: TanStack Router with nested layouts
 - **Styling**: Tailwind CSS + Radix UI
@@ -175,6 +192,7 @@ CLOUDFLARE_ACCOUNT_ID=your_cf_account
 - **Real-time**: Server-Sent Events + WebSockets
 
 ### **Backend (Bun + TypeScript)**
+
 - **Runtime**: Bun for ultra-fast performance
 - **Framework**: Custom server with Better Auth
 - **Database**: MongoDB with Mongoose
@@ -183,6 +201,7 @@ CLOUDFLARE_ACCOUNT_ID=your_cf_account
 - **AI**: Gemini AI for market analysis
 
 ### **Hackathon Integrations**
+
 - **Convex**: Real-time collaborative features
 - **CodeRabbit**: AI code review for trading algorithms
 - **Netlify**: Edge deployment and CDN
@@ -194,6 +213,7 @@ CLOUDFLARE_ACCOUNT_ID=your_cf_account
 ## 🎯 Hackathon Highlights
 
 ### **TanStack Start Showcase**
+
 1. **Full-Document SSR**: Lightning-fast initial page loads
 2. **Streaming**: Progressive data loading with skeleton states
 3. **Server Functions**: Edge-deployed API routes
@@ -201,6 +221,7 @@ CLOUDFLARE_ACCOUNT_ID=your_cf_account
 5. **Type Safety**: End-to-end TypeScript integration
 
 ### **Innovation Points**
+
 - **AI-First Approach**: Gemini AI powers every feature
 - **Real-time Collaboration**: Live trading rooms and shared strategies
 - **Edge Computing**: Cloudflare Workers for market data processing
@@ -210,6 +231,7 @@ CLOUDFLARE_ACCOUNT_ID=your_cf_account
 ## 📱 Demo Features
 
 ### **Live Demo Scenarios**
+
 1. **Real-time Trading Room**: Join live discussions with streaming updates
 2. **AI Stock Analysis**: Get instant AI-powered stock recommendations
 3. **Collaborative Watchlist**: Share and sync watchlists in real-time
@@ -227,6 +249,7 @@ CLOUDFLARE_ACCOUNT_ID=your_cf_account
 ## 🚀 Deployment
 
 ### **Production Deployment**
+sdfsdf
 ```bash
 # Build for production
 npm run build
@@ -239,6 +262,7 @@ wrangler deploy
 ```
 
 ### **Environment Targets**
+
 - **Frontend**: Netlify Edge Functions
 - **Backend**: Railway/Render with Bun
 - **Database**: MongoDB Atlas
@@ -269,4 +293,5 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 **Built with ❤️ for the TanStack Start Hackathon**
 
-*Competing for $140k in prizes with cutting-edge financial intelligence technology*
+_Competing for $140k in prizes with cutting-edge financial intelligence technology_
+
